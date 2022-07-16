@@ -2,7 +2,6 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
-import HighlightText from './src/highlightText';
 import HighlightExample from './src/highlight/highlight';
 
 const example = 'Auswählen und highlighten und so weiter und so fort'

@@ -7,9 +7,7 @@ import exampleData from '../exampleData';
 import highlightColor from '../colors';
 
 
-const example = 'Auswählen und highlighten und so weiter und so fort'
-
-export default function HighlightExample() {
+export default function HighlightExample({example}) {
   const wordArray = exampleData(example)
 
   const [wordData, setWordData ] = useState(wordArray)
@@ -57,10 +55,9 @@ return (
       <View style={{ backgroundColor: 'black', margin: 2, borderRadius: 10}}>
         <Text style={{ fontSize: 20, padding: 2}}>
           {wordData.map(word => 
-            <Text style={{ color: word.color }}> {word.name} </Text>)}
+            <Text key={word.id} style={{ color: word.color }}> {word.name} </Text>)}
         </Text>
       </View>
-      
     </View>
   </View>
 );

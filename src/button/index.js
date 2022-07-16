@@ -1,7 +1,6 @@
 import { Text, View, TouchableOpacity } from 'react-native'
 import React from 'react'
 
-
 export default function Button({ text, onPress, backgroundColor, borderColor, margin=10, fontColor }) {
   return (
     <View>
